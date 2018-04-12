@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import PredictiveMaintance from '@/components/PredictiveMaintance'
+import PredictiveMaintenance from '@/components/PredictiveMaintenance'
 
 Vue.use(Router)
 
@@ -8,8 +8,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'PredictiveMaintance',
-      component: PredictiveMaintance
+      name: 'PredictiveMaintenance',
+      component: PredictiveMaintenance
     }
   ]
 })

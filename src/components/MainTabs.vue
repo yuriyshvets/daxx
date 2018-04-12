@@ -1,12 +1,13 @@
 <template>
-	<div>
+	<div >
 	    <v-tabs
 	      color="white"
 	      dark
 	      slider-color="blue darken-2"
+	      class="sidebar"
 	    >
 	      <v-tab
-	        class="blue--text"
+	        class="blue--text "
 	        v-for="tab in tabItems"
 	        :key="tab.id"
 	        ripple
@@ -17,7 +18,7 @@
 	        v-for="tab in tabItems"
 	        :key="tab.id"
 	      >
-	        <v-card flat>
+	        <v-card flat class="grey lighten-4 py-4 px-4">
 	          <component :is="tab.component"></component>
 	          <p v-if="!tab.component">{{tab.title}} content</p>
 	        </v-card>
@@ -44,3 +45,8 @@ import AssetHealth from './AssetHealth'
     }
   }
 </script>
+<style>
+	.sidebar {
+    height: 48px;
+  }
+</style>
